@@ -1,0 +1,125 @@
+/*---------------------THIRD-SECTION------------------*/
+
+.third-main-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--worders-bg-color);
+
+  @media screen and (min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width:1200px) {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.worderks-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 30px;
+
+  &__card-text {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__workers-name {
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+  }
+
+  .worderks-list__workers-specialty {
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+
+    color: var(--p-color);
+  }
+}
+
+.worderks-list__card {
+  text-align: center;
+
+  background-color: var(--workers-card-bg-cl);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  @media screen and (max-width: 479px) {
+    width: 270px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+
+/*worderks-social-messengers*/
+
+.worderks-list__social-messengers {
+  display: inline-flex;
+}
+
+.worderks-list__messenger{
+  &:not(:last-child) {
+  margin-right: 10px;
+  }
+}
+
+.worderks-list__personal-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+
+  background-color: var(--workers-card-bg-cl);
+
+  transition: background-color 250ms var(--animation-timer);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.worderks-list__person-link {
+  fill: #afb1b8;
+  transition: fill 250ms var(--animation-timer);
+
+  .worderks-list__personal-page:hover &,
+  .worderks-list__personal-page:focus & {
+    fill: var(--workers-card-bg-cl);
+  }
+}

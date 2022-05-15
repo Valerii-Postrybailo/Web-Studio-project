@@ -1,0 +1,168 @@
+
+/*-----HEADER-----*/
+.page-header {
+  border-bottom: var(--header-bottom-line);
+  position: relative;
+  
+  @media screen and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+.page-header__header-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 10px;
+  
+  @media screen and (max-width: 767px) {
+    max-width: 767px;
+  }
+}
+
+/*---LOGO---*/
+
+.page-header__header-logo {
+  display: inline-block;
+
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  color: var(--first-logo-part);
+
+  &--black {
+    color: var(--second-logo-header-part);
+  }
+}
+
+/*-----------------NAV-----------------*/
+.page-header__site-nav {
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 93px;
+  }
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.nav-list__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.nav-list__link {
+  display: flex;
+  position: relative;
+  align-items: center;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--nav-color);
+
+  transition: color 250ms var(--animation-timer);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.nav-list__current-page {
+
+  & {
+    color: var(--accent-color);
+  }
+
+  &::after {
+    position: absolute;
+
+    content: "";
+    bottom: 0px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+
+    background-color: var(--accent-color);
+  }
+}
+
+/*---------------MAIL-AND-TEL+THEIR-ICON----------*/
+
+/*---------MAIL-AND-TEL-------*/
+
+.mail-and-tel__list {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+
+    margin-left: 84px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .mail-and-tel__item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .mail-and-tel__item:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.mail-and-tel__link {
+  display: flex;
+  align-items: center;
+
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--mail-and-tell-color);
+
+  transition: color 250ms var(--animation-timer);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+}
+
+/*-----------iCON---------*/
+
+.mail-and-tel__contact-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}

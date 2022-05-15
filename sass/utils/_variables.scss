@@ -1,0 +1,105 @@
+$main-font: "Roboto";
+$secondary-font: "Raleway";
+
+
+:root {
+  /*----TIMER-FOR-ANIMATIONS-IN-PROJECT----*/
+
+  /*timer for all animations in project*/
+  --animation-timer: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /*----------HEADER-VARS---------*/
+
+  /*text color in nav */
+  --nav-color: #212121;
+
+  /*mail and tall color in footer and header */
+  --mail-and-tell-color: #757575;
+
+  /*first logo part in header and footer*/
+  --first-logo-part: #2196f3;
+
+  /*second logo part JUST in header */
+  --second-logo-header-part: #212121;
+
+  /* color for ALL hover and focus IN PROJECT */
+  --accent-color: #2196f3;
+
+  /*bottom line in header*/
+  --header-bottom-line: 1px solid #ececec;
+
+  /*-------HERO-AND-SOME-PROJECT-BUTTONS-----*/
+
+  /*hero title*/
+  --hero-title-color: #ffffff;
+
+  /*buttons in hero and footer*/
+  --hero-footer-buttons-bgcolor: #2196f3;
+
+  /*hover and focus color for these bottuns */
+  --hero-footer-buttons-hover-focus-color: #188ce8;
+
+  /*text color in these buttons*/
+  --text-bottons-color: #ffffff;
+
+  /*hero and footer bg color */
+  --hero-and-footer-bgcolor: #2f303a;
+
+  /*------FIRST-SECTION-------*/
+
+  /*title color IN PROJECT (without hero) */
+  --title-color: #212121;
+
+  /*description color */
+  --first-section-descrip-cl: #757575;
+
+  /*bg color for svg icon */
+  --first-sec-svg-color: #f5f4fa;
+
+  /*----------SECOND-SECTION---------*/
+
+  /*img description color */
+  --p-color-for-img-second-sec: #ffffff;
+
+  /*-------------------THIRD-SECTION-----------*/
+
+  /*bg color in section */
+  --worders-bg-color: #f5f4fa;
+
+  /*workers card bg color */
+  --workers-card-bg-cl: #ffffff;
+
+  /*------------FOOTER----------*/
+
+  /*icon color, adreess color, h3 color */
+
+  --footer-main-color: #ffffff;
+
+  /*color of first logo part*/
+
+  --first-logo-part: #2196f3;
+
+  /*----------PORTFOLIO-----------*/
+
+  /*buttom bg color in portfolio*/
+
+  --filter-buttons-bg-cl: #f5f4fa;
+
+  /*text buttons color in hover */
+  --active-text-button-cl: #fff;
+
+  /*color of description in card*/
+  --description-color-in-card: #757575;
+
+  /*porfolio overlay text */
+  --overlay-text-color: #fff;
+
+  /*--------------MODAL-WINDOW----------*/
+
+  /*bg color in modal window */
+  --modal-bg-color: #fff;
+
+  /*text in modal window */
+  --modal-text-cl: #757575;
+
+}

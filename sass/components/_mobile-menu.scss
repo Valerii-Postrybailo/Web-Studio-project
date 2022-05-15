@@ -1,0 +1,139 @@
+.menu-container{
+  padding: 10px 15px 48px 40px;
+
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  right: 0;
+  z-index: 999;
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: white;
+  font-size:20px;
+
+
+  @media screen and (min-width:768px) {
+    display: none;
+  }
+}
+
+.menu-open-btn,
+.menu-close-btn{
+  display: flex;
+  margin-left:auto;
+  padding:0;
+  border:none;
+  background-color: transparent;
+
+  // &__cross-button {
+  // display: none;
+  // }
+
+  // &.is-open .menu-button__cross-button  {
+  // display: block;
+  // }
+
+  // &.is-open .menu-button__burger-menu {
+  // display: none;
+  // }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-open-btn:hover,
+.menu-close-btn:hover,
+.menu-open-btn:focus,
+.menu-close-btn:focus{
+  fill: #2196f3;
+}
+
+.mob-menu__item{
+  display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }  
+}
+
+.mob-menu__tel-item{
+  margin-bottom: 32px;
+}
+
+.mob-menu__tel{
+  display: block;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mob-menu__mail-item{
+  margin-bottom: 64px;
+}
+
+.mob-menu__mail{
+  display: block;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mob-menu__social-pages{
+  display: flex;
+  column-gap: 20px;
+  flex-wrap: wrap;
+}
+
+.mob-menu__link{
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  
+  text-decoration: none;
+  color: #212121;
+}
+
+.mob-menu__pages-link{
+  position: relative;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mob-menu__pages-item{
+position: relative;
+}
+
+.mob-menu__pages-item:not(:first-child)::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 1px;
+  height: 22px;
+  background-color: rgba(33, 33, 33, 0.2);
+}
+
+.mob-menu__current-page{
+  color:var(--accent-color)
+}

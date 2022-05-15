@@ -1,0 +1,41 @@
+$main-font: "Roboto";
+$secondary-font: "Raleway";
+
+body {
+  background-color: var(--main-white-color);
+  color: var(--title-color);
+
+  font-family: $main-font, $secondary-font, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+}
+
+body.modal-open{
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
