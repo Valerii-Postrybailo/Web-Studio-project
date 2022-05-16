@@ -76,6 +76,10 @@
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: #2196f3;
+  
+  @media screen and(max-width:480px) {
+    font-size: 24px;
+  }
 }
 
 .mob-menu__mail-item{
@@ -117,6 +121,10 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
+  
+  @media screen and(max-width:480px) {
+    font-size: 10px;
+  }
 }
 
 .mob-menu__pages-item{
