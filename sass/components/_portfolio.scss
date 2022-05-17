@@ -106,7 +106,9 @@
 }
 
 .filter__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height:100%;
 
   transition: box-shadow 250ms var(--animation-timer);
 
@@ -118,6 +120,7 @@
 }
 
 .filter__card-box {
+  flex-grow: 1;
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
