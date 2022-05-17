@@ -221,6 +221,12 @@ ul {
   color: #2196f3;
 }
 
+@media screen and (max-width: 479px) {
+  .mob-menu__tel {
+    font-size: 24px;
+  }
+}
+
 .mob-menu__mail-item {
   margin-bottom: 64px;
 }
@@ -263,6 +269,12 @@ ul {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+
+@media screen and (max-width: 479px) {
+  .mob-menu__pages-link {
+    font-size: 10px;
+  }
 }
 
 .mob-menu__pages-item {
@@ -1247,7 +1259,7 @@ ul {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 30px 165px;
+    gap: 60px 165px;
   }
 }
 
