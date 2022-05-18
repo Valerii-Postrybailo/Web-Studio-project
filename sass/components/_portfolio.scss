@@ -179,7 +179,7 @@
 
 .filter__overlay-text {
   position: absolute;
-  padding: 63px 24px;
+  padding: 77px 24px;
 
   transition: transform 250ms var(--animation-timer);
 
@@ -194,7 +194,17 @@
     transform: translateY(-100%);
   }
 
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px 77px 24px;
+  }
+
+
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
+  }
+
   @media screen and (max-width:480px){
-    padding:5px 5px;
+    font-size: 14px;
+    padding: 30px 5px;
   }
 }
