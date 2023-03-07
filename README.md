@@ -1,4 +1,4 @@
 # Web-Studio-project
-One page    
-Three break points: 320px, 768px, 1200px    
+Two pages (Портфолио/Студия)
+Three break points: 480px, 768px, 1200px    
 Technologies: HTML-SASS-SCSS-BEM-JS-FIGMA
